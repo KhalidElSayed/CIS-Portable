@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:titleCondensed="Refresh" android:id="@+id/refreshCalendar"
+		android:title="Refresh" android:icon="@drawable/ic_menu_refresh_calendar" android:alphabeticShortcut="r" android:enabled="true" android:checkable="false"></item>
+
+</menu>

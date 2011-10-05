@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CISHttpsLoginActivity!</string>
+    <string name="app_name">CIS Https Login</string>
+    <string name="login_label_username">Username</string>
+    <string name="login_label_password">Password</string>
+    <string name="login_label_loginbutton">Login</string>
+    <string name="login_label_remembercheckbox">Remember username</string>
+    <string name="login_label_autologincheckbox">Automatic Login</string>
+    <string name="login_name">CIS - Login</string>
+    <string name="login_failed">Login failed! Please check your credentials, or try again later!</string>
+    <string name="credentials_incomplete">Please enter your username and password</string>
+    <string name="login_sucessful">Login successful!</string>
+    <string name="login_progress">Trying to log in. Please wait...</string>
+    <string name="next_lesson">Next Lesson</string>
+    <string name="upcoming_lessons">Upcoming Lessons</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="date">Date</string>
+    <string name="room">Room</string>
+    <string name="teacher">Teacher</string>
+    <string name="monday_short">Mo</string>
+    <string name="tuesday_short">Tue</string>
+    <string name="wednesday_short">Wed</string>
+    <string name="thursday_short">Thu</string>
+    <string name="friday_short">Fri</string>
+    <string name="saturday_short">Sat</string>
+    <string name="sunday_short">Sun</string>
+    <string name="login_stepOne">Please enter your login credentials</string>
+    <string name="login_stepTwo">Choose login type</string>
+    <string name="login_stepThree">Enjoy!</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">CIS Portable</string>
+	<string name="login_label_username">Benutzername</string>
+	<string name="login_label_password">Passwort</string>
+	<string name="login_label_loginbutton">Einloggen</string>
+	<string name="login_label_remembercheckbox">Benutzernamen merken</string>
+	<string name="login_label_autologincheckbox">Automatisch einloggen</string>
+	<string name="login_name">CIS - Login</string>
+	<string name="login_failed">Login fehlgeschlagen! Bitte überprüfe deine
+		Logindaten oder probiere es später nochmal!</string>
+	<string name="credentials_incomplete">Bitte Benutzernamen und Passwort angeben</string>
+	<string name="login_sucessful">Login erfolgreich!</string>
+	<string name="login_progress">Login läuft. Bitte warten...</string>
+	<string name="next_lesson">Nächste Stunde</string>
+	<string name="upcoming_lessons">Weitere Stunden</string>
+	<string name="today">Heute</string>
+	<string name="tomorrow">Morgen</string>
+	<string name="date">Datum</string>
+	<string name="room">Raum</string>
+	<string name="teacher">Lehrer</string>
+	<string name="monday_short">Mo</string>
+	<string name="tuesday_short">Di</string>
+	<string name="wednesday_short">Mi</string>
+	<string name="thursday_short">Do</string>
+	<string name="friday_short">Fr</string>
+	<string name="saturday_short">Sa</string>
+	<string name="sunday_short">So</string>
+	<string name="login_stepOne">Bitte gib deine Logindaten ein</string>
+	<string name="login_stepTwo">Wähle eine Login-Art</string>
+	<string name="login_stepThree">Viel Spaß!</string>
+</resources>

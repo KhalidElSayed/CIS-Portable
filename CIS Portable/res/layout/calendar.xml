@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/LinearLayout1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:clickable="true"
+	android:padding="15sp" android:clipToPadding="true" android:drawingCacheQuality="high"
+	android:fadingEdge="vertical" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:weightSum="1" android:orientation="vertical" android:background="@color/background_grey">
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content" android:layout_marginBottom="15sp">
+		<TextView android:text="@string/next_lesson"
+			android:layout_height="wrap_content" android:id="@+id/textView1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="fill_parent" android:gravity="center" android:textColor="@color/fh_blue"></TextView>
+		<LinearLayout android:id="@+id/LinearLayout2" android:padding="15sp" android:background="@drawable/white_box" android:orientation="horizontal" android:baselineAligned="false" android:layout_height="wrap_content" android:layout_width="match_parent" android:gravity="center">
+			<TextView android:id="@+id/noNextLesson" android:text="Currently there is no lesson available" android:textStyle="italic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center" android:visibility="gone" android:textColor="@color/light_grey_text"></TextView>
+			<TextView android:background="@drawable/round_blue" android:textColor="#FFFFFFFF" android:textStyle="bold" android:typeface="sans" android:paddingLeft="15sp" android:paddingRight="15sp" android:layout_width="wrap_content" android:gravity="center" android:layout_height="fill_parent" android:layout_marginRight="15sp" android:id="@+id/nextLessonRoom" android:textSize="20sp" android:text="-"></TextView>
+			<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:id="@+id/linearLayout4" android:layout_weight="0.8" android:gravity="center_vertical" android:layout_height="wrap_content">
+				<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/nextLessonDate" android:text="-"></TextView>
+				<TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/nextLessonName" android:text="-"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:orientation="vertical" android:id="@+id/linearLayout3"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TextView android:text="@string/upcoming_lessons"
+			android:layout_height="wrap_content" android:id="@+id/textView2"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:gravity="center" android:layout_width="fill_parent" android:textColor="@color/fh_blue"></TextView>
+		<at.technikum.bicss.spp.cis.widgets.RoundedExpandableListView
+			android:background="@drawable/white_box" android:clipToPadding="true"
+			android:childDivider="#ffdddddd" android:paddingTop="0sp"
+			android:drawingCacheQuality="high" android:indicatorLeft="30sp"
+			android:layout_height="fill_parent" android:clipChildren="true"
+			android:id="@+id/calendarListView" android:cacheColorHint="#0000"
+			android:paddingBottom="0sp" android:paddingRight="0sp"
+			android:fadingEdge="vertical" android:layout_width="fill_parent"
+			android:visibility="visible" android:paddingLeft="0sp"
+			android:dividerHeight="1sp"></at.technikum.bicss.spp.cis.widgets.RoundedExpandableListView>
+	</LinearLayout>
+</LinearLayout>

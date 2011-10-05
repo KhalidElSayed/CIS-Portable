@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/at.technikum.bicss.spp.cis"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" android:keepScreenOn="true" android:orientation="vertical">
+    <LinearLayout android:id="@+id/appTopMenu" android:background="@color/fh_blue" android:layout_width="fill_parent" android:layout_height="32sp" android:orientation="horizontal" android:gravity="center_vertical" android:paddingLeft="5sp">
+        <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Refreshing" android:textColor="@color/white" android:id="@+id/progressMessage"></TextView>
+        <ImageView android:layout_height="wrap_content" android:src="@drawable/refresh_arrows" android:layout_width="wrap_content" android:id="@+id/progressIcon"></ImageView>
+    </LinearLayout>
+
+	
+	<com.jakewharton.android.viewpagerindicator.TitlePageIndicator
+		android:id="@+id/titles" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:background="#FFDDDDDD"
+		app:footerColor="#FF00BFFF" app:footerLineHeight="2dp"
+		app:footerIndicatorStyle="underline" app:textColor="#FF000000"
+		app:selectedColor="#F000BFFF" app:selectedBold="false" />
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/pager" android:layout_width="match_parent"
+		android:layout_height="0px" android:layout_weight="1">
+	</android.support.v4.view.ViewPager>
+</LinearLayout>

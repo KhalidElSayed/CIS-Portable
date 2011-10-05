@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/LinearLayout1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:gravity="top" android:padding="15sp" android:layout_height="fill_parent">
+	<ScrollView android:layout_alignParentLeft="true"
+		android:id="@+id/scrollView1" android:scrollbars="none"
+		android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:layout_alignParentTop="true" android:layout_height="wrap_content">
+		<LinearLayout android:id="@+id/linearLayout1"
+			android:layout_width="match_parent" android:orientation="vertical"
+			android:layout_height="match_parent">
+			<ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/cis_portable_logo" android:id="@+id/logo" android:scaleType="centerInside"></ImageView>
+			<TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:textColor="@color/dark_grey_text" android:id="@+id/welcomeText" android:inputType="none" android:text="Lorem ipsum..." android:paddingBottom="15sp" android:textSize="14sp" android:paddingTop="15sp" android:gravity="center" android:layout_width="fill_parent" android:textStyle="italic" android:visibility="gone"></TextView>
+			<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:layout_marginBottom="5sp" android:id="@+id/stepOneBox">
+				<TextView android:id="@+id/textView1" android:textAppearance="?android:attr/textAppearanceMedium" android:background="@drawable/blue_circle" android:text="1" android:textColor="@color/white" android:textStyle="bold" android:textSize="25sp" android:layout_marginRight="5sp" android:layout_height="35sp" android:layout_width="35sp" android:gravity="center"></TextView>
+				<TextView android:textColor="@color/fh_blue" android:id="@+id/stepOne" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:textStyle="bold" android:textSize="15sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:text="@string/login_stepOne"></TextView>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/box_username_icon">
+				<ImageView android:id="@+id/imageView1" android:src="@drawable/user_icon"
+					android:layout_width="wrap_content" android:layout_height="match_parent"></ImageView>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:id="@+id/box_username">
+					<EditText android:layout_height="wrap_content"
+						android:layout_gravity="center" android:imeOptions="actionNext"
+						android:layout_width="match_parent" android:id="@+id/usernameInputBox"
+						android:maxLines="1" android:inputType="text"></EditText>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/box_password_icon">
+				<ImageView android:id="@+id/imageView2" android:src="@drawable/key_icon"
+					android:layout_width="wrap_content" android:layout_height="match_parent"></ImageView>
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:id="@+id/box_password">
+					<EditText android:layout_height="wrap_content"
+						android:imeOptions="actionDone" android:inputType="textPassword"
+						android:layout_width="match_parent" android:id="@+id/passwordInputBox"></EditText>
+				</LinearLayout>
+			</LinearLayout>
+			<LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:layout_marginBottom="5sp" android:layout_height="wrap_content" android:layout_marginTop="10sp" android:id="@+id/stepTwoBox">
+				<TextView android:textStyle="bold" android:background="@drawable/blue_circle" android:textSize="25sp" android:gravity="center" android:textColor="@color/white" android:layout_marginRight="5sp" android:id="@+id/TextView02" android:textAppearance="?android:attr/textAppearanceMedium" android:text="2" android:layout_height="35sp" android:layout_width="35sp"></TextView>
+				<TextView android:textStyle="bold" android:layout_width="wrap_content" android:textSize="15sp" android:gravity="center_vertical" android:textColor="@color/fh_blue" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/stepTwo" android:text="@string/login_stepTwo"></TextView>
+			</LinearLayout>
+			<RelativeLayout android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:id="@+id/stepTwoCheckboxes">
+				<CheckBox android:layout_height="wrap_content"
+					android:text="@string/login_label_remembercheckbox"
+					android:layout_alignParentTop="true" android:checked="true"
+					android:layout_alignParentLeft="true" android:layout_width="wrap_content"
+					android:id="@+id/rememberUsernameCheckBox" android:textStyle="bold" android:textColor="@color/dark_grey_text"></CheckBox>
+				<CheckBox android:layout_height="wrap_content"
+					android:text="@string/login_label_autologincheckbox"
+					android:layout_width="wrap_content" android:id="@+id/autoLoginCheckBox"
+					android:layout_below="@id/rememberUsernameCheckBox" android:textColor="@color/dark_grey_text" android:textStyle="bold"></CheckBox>
+			</RelativeLayout>
+			<LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:layout_marginTop="10sp" android:id="@+id/LinearLayout01" android:layout_marginBottom="5sp" android:layout_height="wrap_content">
+				<TextView android:textStyle="bold" android:background="@drawable/blue_circle" android:textSize="25sp" android:gravity="center" android:textColor="@color/white" android:layout_marginRight="5sp" android:id="@+id/TextView03" android:textAppearance="?android:attr/textAppearanceMedium" android:text="3" android:layout_height="35sp" android:layout_width="35sp"></TextView>
+				<TextView android:textStyle="bold" android:layout_width="wrap_content" android:textSize="15sp" android:gravity="center_vertical" android:textColor="@color/fh_blue" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:id="@+id/stepThree" android:text="@string/login_stepThree"></TextView>
+			</LinearLayout>
+			<Button android:layout_height="wrap_content" android:id="@+id/loginButton" android:layout_width="wrap_content" android:text="@string/login_label_loginbutton" android:layout_marginTop="5sp"></Button>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

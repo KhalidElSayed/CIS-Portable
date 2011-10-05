@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:background="@color/background_grey" android:padding="15sp">
+    <at.technikum.bicss.spp.cis.CalendarView android:id="@+id/calendarView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/white_box" android:padding="15sp">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+        <TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+        <TableRow android:id="@+id/tableRow3" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+        <TableRow android:id="@+id/tableRow4" android:layout_width="wrap_content" android:layout_height="wrap_content"></TableRow>
+    </at.technikum.bicss.spp.cis.CalendarView>
+	
+	<TextView android:id="@+id/noEntryLabel" android:text="No News Entry Yet" android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/white_box" android:gravity="center" android:textColor="@color/fh_blue" android:textSize="20sp" android:textStyle="bold"></TextView>
+</LinearLayout>
